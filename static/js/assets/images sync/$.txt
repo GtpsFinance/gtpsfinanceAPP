@@ -1,0 +1,62 @@
+var map = {
+	"./QuickSwap_logo.png": 477,
+	"./arkane.svg": 1596,
+	"./arrow-down-blue.svg": 1597,
+	"./arrow-down-grey.svg": 1598,
+	"./arrow-right-white.png": 1599,
+	"./arrow-right.svg": 1600,
+	"./big_unicorn.png": 1601,
+	"./blue-loader.svg": 134,
+	"./circle-grey.svg": 1602,
+	"./circle.svg": 1603,
+	"./coinbaseWalletIcon.svg": 275,
+	"./dropdown-blue.svg": 1604,
+	"./dropdown.svg": 1605,
+	"./dropup-blue.svg": 1606,
+	"./ethereum-logo.png": 1607,
+	"./fortmaticIcon.png": 276,
+	"./gnosis_safe.png": 1608,
+	"./link.svg": 1609,
+	"./logo_circle.png": 274,
+	"./magnifying-glass.svg": 1610,
+	"./matic.png": 479,
+	"./menu.svg": 1611,
+	"./metamask.png": 478,
+	"./noise.png": 273,
+	"./plus-blue.svg": 1612,
+	"./plus-grey.svg": 1613,
+	"./portisIcon.png": 277,
+	"./qsbg.png": 271,
+	"./question-mark.svg": 1614,
+	"./question.svg": 1615,
+	"./quick_logo.jpeg": 208,
+	"./spinner.svg": 1616,
+	"./token-list/lists-dark.png": 1617,
+	"./token-list/lists-light.png": 1618,
+	"./token-logo.png": 1619,
+	"./trustWallet.png": 1620,
+	"./venly.svg": 1621,
+	"./walletConnectIcon.svg": 278,
+	"./x.svg": 1622,
+	"./xl_uni.png": 272
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 452;
